@@ -1,0 +1,20 @@
+.highlightActions {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  background-color: #0E0F11;
+  border-radius: 12px;
+  width: fit-content;
+  padding: 5px 15px;
+  transition: all ease-in .2s;
+  opacity: 100;
+}
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}

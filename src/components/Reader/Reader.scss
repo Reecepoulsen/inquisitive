@@ -1,0 +1,19 @@
+.reader {
+  display: inline-block;
+  transition: all ease .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #1A1C20;
+  padding: 60px;
+  font-size: large;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  cursor: text;
+}
+
+.center{
+  left: 25%;
+}

@@ -1,0 +1,8 @@
+.interactIcon {
+  transition: all ease-in .2s;
+  
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+}

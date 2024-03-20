@@ -1,0 +1,14 @@
+.chatInteractions{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  // align-self: center;
+  border-radius: 12px;
+  height: fit-content;
+  transition: all ease-in .2s;
+} 
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}

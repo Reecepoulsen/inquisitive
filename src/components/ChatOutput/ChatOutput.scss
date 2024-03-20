@@ -1,0 +1,11 @@
+.chatOutput{
+  display: flex;
+  column-gap: 15px;
+  justify-items: center;
+  font-size: large;
+
+  &__content{
+    flex-grow: 1;
+    cursor: text;
+  }
+}
