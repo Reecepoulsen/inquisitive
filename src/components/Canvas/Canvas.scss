@@ -11,6 +11,7 @@ body {
 
   &__toggle{
     transition: all ease .5s;
+    opacity: 100;
     position: absolute;
     cursor: pointer;
     width: 75px;
@@ -34,5 +35,7 @@ body {
 }
 
 .slideToggle {
+  opacity: 0;
+  pointer-events: none;
   right: 50px;
 }

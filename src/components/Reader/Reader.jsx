@@ -3,7 +3,7 @@ import HighlightActions from '../HighlightActions/HighlightActions'
 import "./Reader.scss"
 
 
-export default function Reader({content, center}) {
+export default function Reader({content, center, setCenter}) {
   const [selectedText, setSelectedText] = useState("");
 
   const getSelectedText = () => {
@@ -22,7 +22,7 @@ export default function Reader({content, center}) {
 
   return (
       <div className={`reader ${center ? "center" : ""}`} onMouseUp={() => setSelectedText(getSelectedText())}>
-        <HighlightActions selectedText={selectedText}/>
+        <HighlightActions selectedText={selectedText} setCenter={setCenter}/>
         <div className='contentWrapper'>
           {content}
         </div>

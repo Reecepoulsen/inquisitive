@@ -7,10 +7,10 @@ import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutli
 
 const basicFunc = () => console.log("Hello world");
 
-export default function HighlightActions({selectedText}) {
+export default function HighlightActions({selectedText, setCenter}) {
   return (
     <div className={`highlightActions ${selectedText ? "" : "fadeOut"}`}>
-      <InteractIcon interactFunc={basicFunc}> 
+      <InteractIcon interactFunc={() => setCenter(false)}> 
         <TryIcon fontSize='small'/>
       </InteractIcon > 
       <InteractIcon interactFunc={basicFunc}> 
@@ -19,7 +19,6 @@ export default function HighlightActions({selectedText}) {
       <InteractIcon interactFunc={basicFunc}> 
         <DriveFileRenameOutlineIcon fontSize='small'/>
       </InteractIcon> 
-
     </div>
   )
 }
